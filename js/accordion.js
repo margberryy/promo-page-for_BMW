@@ -1,6 +1,5 @@
 const futureLinksElems = document.querySelectorAll('.feature__link');
 const futureSubElems = document.querySelectorAll('.feature-sub');
-console.log(futureSubElems)
 futureLinksElems.forEach((btn, index) => {
    btn.addEventListener('click', () => {
       if (btn.classList.contains('feature__link_active')) {
@@ -15,7 +14,6 @@ futureLinksElems.forEach((btn, index) => {
          })
          futureSubElems[index].classList.remove('hidden');
          btn.classList.add('feature__link_active');
-         console.log(1)
       }
    })
 });
